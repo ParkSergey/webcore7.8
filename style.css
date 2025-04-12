@@ -1,14 +1,17 @@
 @font-face {
   font-family: 'TT Lakes';
-  src: url(./fonts/TTLakes-Regular.ttf) format(truetype);
+  src: url(fonts/TTLakes-Regular.ttf) format(truetype);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'TT Lakes';
-  src: url(./fonts/TTLakes-DemiBold.ttf) format(truetype);
+  src: url(fonts/TTLakes-DemiBold.ttf) format(truetype);
   font-weight: 600;
   font-style: normal;
+}
+body{
+  margin: 0 0;
 }
 
 * {
@@ -18,16 +21,17 @@
   display: flex;
   gap: 24px;
   justify-content: space-between;
-  padding-left: 16px;
+  padding-left: 24px;
   align-items: center;
 }
 .top-icons__left {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding-left: 24px;
 }
 .top-icons__search {
-  margin-right: 24px;
+  padding-right: 24px;
 }
 .menu {
   position: fixed;
@@ -79,25 +83,36 @@
   height: 24px;
   width: 170px;
   border-left: 4px solid #41f6d7;
-border-bottom: none;
-border-right: none;
-border-top: none;
+  border-bottom: none;
+  border-right: none;
+  border-top: none;
 }
-.bottom-icons {
+.contact-info {
   padding-top: 16px;
   margin-top: 270px;
-  margin-left: 24px;
-  min-height: 100%;
+  padding-left: 24px;
   width: 320px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+.contact-info__mail__phone{
+  font-family: 'TT Lakes';
+  font-size: 16px;
+  font-weight: 500;
   display: block;
+  flex: 0 0 100%;
+  margin-top: 16px;
+
+
 }
-.bottom-icons img {
-  margin-left: 20px;
+.tel{
+  font-family: 'TT Lakes';
+  line-height: 32px;
+  margin-top: 12px;
 }
-.bottom-icons img:first-child {
-  margin-left: 24px;
-}
-.language {
+.language-choose {
   font-family: 'TT Lakes';
   font-size: 24px;
   font-weight: 500;
@@ -112,11 +127,11 @@ border-top: none;
 .contacts img {
   margin-top: 16px;
 }
-.language button {
+.language-choose button {
   font-family: 'TT Lakes';
   border: none;
   background-color: #ffffff;
 }
-.language :first-child {
+.language-choose :first-child {
   color: #7e7e82;
 }
